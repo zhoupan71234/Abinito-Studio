@@ -1,0 +1,16 @@
+# Whether a jump node is used ? (True or False)
+jump : True
+
+# Information for the jump server
+jump_ip£º172.20.128.28
+jump_username£ºcustomer
+jump_password£ºzhoupan123
+
+# Information for the calculation node
+cal_ip£º192.168.1.2
+cal_username£ºzhoupan
+cal_password£ºzhoupan123
+
+# local path and remote path 
+remote_path£º/home/zhoupan/luxin/test
+local_path£ºDefault desktop generates the VASP_files folder

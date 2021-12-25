@@ -1,0 +1,110 @@
+# relax_INCAR
+SYSTEM=MoS2
+ISTART=0
+ICHARG=2
+
+ENCUT=400
+ALGO=Fast
+IALGO=38
+NELM=100
+NELMIN=2
+NELMDL=-5
+EDIFF=1E-5
+PREC=A
+
+ISMEAR=0
+SIGMA=0.02
+
+LREAL=Auto
+
+LCHARG=.F.
+LWAVE=.F.
+LVTOT=.F.
+
+IBRION=2
+ISIF=4
+POTIM=0.2
+EDIFFG=-0.01
+NSW=300
+
+# relax_KPOINTS
+Automatic generation
+0
+Gamma
+7 7 7 
+0.0  0.0   0.0
+
+# scf_INCAR
+SYSTEM=MoS2
+ISTART=0
+ICHARG=2
+
+ENCUT=400
+ALGO=Fast
+IALGO=38
+NELM=100
+NELMIN=2
+NELMDL=-5
+EDIFF=1E-7
+PREC=A
+
+ISMEAR=0
+SIGMA=0.02
+
+LREAL=Auto
+
+LCHARG=.T.
+LWAVE=.F.
+LVTOT=.F.
+
+# scf_KPOINTS
+Automatic generation
+0
+Gamma
+7 7  7
+0.0  0.0   0.0
+
+# DOS_INCAR
+SYSTEM=MoS2
+
+ISTART=1
+ICHARG=11
+
+ENCUT=400
+ALGO=.F.
+IALGO=38
+NELM=100
+NELMIN=2
+NELMDL=-5
+EDIFF=1E-7
+PREC=A
+
+ISMEAR=0
+SIGMA=0.02
+
+LREAL=.F.
+
+LCHARG=.F.
+LWAVE=.F.
+LVTOT=.F.
+
+LORBIT=11
+
+# DOS_KPOINTS
+Automatic generation
+0
+Gamma
+11 11 11
+0.0  0.0   0.0
+
+
+# POTCAR_path
+/public/sourcecode/pseudo5.2.12/
+# Elements_order
+'Cu'
+# Calculation_path
+Cudos
+# VASP_command
+vasp.5.2.12
+# Number_of_task_cores
+16

@@ -1,0 +1,12 @@
+# Whether a jump node is used ? (True or False)
+jump : True
+
+# Information for the jump server
+jump_ip : 202.197.234.194
+jump_username : zhoupan
+jump_password: zhoupan123
+
+# Information for the calculation node
+cal_ip : 192.168.1.5
+cal_username : zhoupan
+cal_password : zhoupan123

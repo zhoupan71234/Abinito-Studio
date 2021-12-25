@@ -1,0 +1,65 @@
+# relax_INCAR
+SYSTEM=Be2Si
+ISTART=0
+IBRION=2
+EDIFF=1E-06
+EDIFFG=-1E-05
+ENCUT=520
+ISMEAR=0
+SIGMA=0.01
+#IBRION=2
+#NSW=1000
+POTIM=0.25
+PREC=Accurate
+NELM=200
+#ISPIN=2
+LORBIT=11
+
+# relax_KPOINTS
+Auto
+0
+G
+9 9 9
+0 0 0
+
+# scf_INCAR
+SYSTEM=MoS2
+ISTART=0
+ICHARG=2
+
+ENCUT=400
+ALGO=Fast
+IALGO=38
+NELM=100
+NELMIN=2
+NELMDL=-5
+EDIFF=1E-7
+PREC=A
+
+ISMEAR=0
+SIGMA=0.02
+
+LREAL=Auto
+
+LCHARG=.T.
+LWAVE=.F.
+LVTOT=.F.
+
+# scf_KPOINTS
+Automatic generation
+0
+Gamma
+11   11    11
+0.0  0.0   0.0
+
+# POTCAR_path
+/public/sourcecode/pseudo5.2.12/
+
+# Elements_order
+'Be' 'Si'
+# Calculation_path
+Be2Si
+# VASP_command
+vasp.5.2.12
+# Number_of_task_cores
+16
